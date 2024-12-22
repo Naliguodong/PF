@@ -87,7 +87,7 @@ def process_date(file_path):
     print("数据预处理完成，已保存到", output_file_path)
 
 
-filePath = "data.xlsx"
+filePath = "data.xls"
 process_date(filePath)
 
 
