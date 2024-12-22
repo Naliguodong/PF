@@ -49,6 +49,7 @@ def process_date(file_path):
             if not prev_values.isnull().any() and not next_values.isnull().any():
                 filled_values = (prev_values + next_values) / 2
                 df.loc[timestamp] = filled_values
+
             else:
                 # 如果前后数据中有缺失，尝试前向或后向填充
                 if not prev_values.isnull().any():
